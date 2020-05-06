@@ -6,7 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [List CheckBox (selam)](#list-checkbox-(selam))
+- [List CheckBox (selam%29](#list-checkbox-(selam))
 - [setTimeout(unsigned long timeout)](#setTimeout(unsigned-long-timeout))
 - [start](#start)
 - [stop](#stop)
