@@ -97,3 +97,144 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 ```
+
+## stop
+- Stops the timer working
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+    
+  tmr1.stop(); // tmr1 is stopped
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+}
+```
+
+## restart
+- Restarts the timer with the given values before
+- You can use this function in any phase of timer working. (eg. while working for refreshin the timer, or after stopped to re use)
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+    
+  tmr1.stop(); // tmr1 is stopped
+  tmr1.restart(); // tmr1 is restarted
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+}
+```
+
+## isExpired
+- This will run continuously after timer's first fired up phase. It means that the timer is fired up.
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  if(tmr1.isExpired())
+  {
+    // After first 1000 milliseconds, codes in here will run continuously
+    // do your staff here
+  }
+}
+```
+
+## onExpired
+- This will run only once on every timer fired up phase. It means the timer is on the fire up time.
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  if(tmr1.onExpired())
+  {
+    // At every 1000 milliseconds, codes in here will run once..
+    // do your staff here
+  }
+}
+```
+
+## isActive
+- Checks is the timer is on working phase
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  if(tmr1.isActive())
+  {
+    // Codes in here will run continuously till the count limit defined on 'tmr1.start(5);' ends.
+    // do your staff here
+  }
+}
+```
+
+## getElapsedTime
+- Checks the elapsed time to the end of the fire up phase
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned long elapsedTime = tmr1.getElapsedTime(); // Gets the value of elapsed time of tmr1
+}
+```
+
+
+
+- [getRemainingTime](#getRemainingTime)
+- [getRepeats](#getRepeats)
+- [getElapsedPercent](#getElapsedPercent)
+- [getRemainingPercent](#getRemainingPercent)
