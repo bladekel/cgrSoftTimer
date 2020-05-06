@@ -7,7 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [List CheckBox (selam)](#list-checkbox-[selam])
-- [setTimeout(unsigned long timeout)](#setTimeout(unsigned-long-timeout))
+- [using Leksah](#leksah-setup-difficulty-hard)
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
@@ -38,7 +38,7 @@ void loop() {
 
 }
 ```
-## List CheckBox (selam)
+## using Leksah
 - Sets the running count of the timer per one second.
 - Range of milliseconds precision timer : 1-1000 Hz 
 - Range of microseconds precision timer : 1-250000 Hz 
