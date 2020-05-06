@@ -6,19 +6,19 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [setHertz(unsigned int hertz)](#setHertz)
-- [setTimeout(unsigned int timeout)](#setTimeout)
-- [start(unsigned int repeatLimit)](#start)
-- [stop](#stop)
-- [restart](#restart)
-- [bool isExpired](#isExpired)
-- [bool onExpired](#onExpired)
-- [bool isActive](#isActive)
-- [unsigned long getElapsedTime](#getElapsedTime)
-- [unsigned long getRemainingTime](#getRemainingTime)
-- [unsigned long getElapsedPercent](#getElapsedPercent)
-- [unsigned long getRemainingPercent](#getRemainingPercent)
-- [unsigned int getRepeats](#getRepeats)
+- [void setHertz(unsigned int hertz)](#setHertz)
+- [void setTimeout(unsigned int timeout)](#setTimeout)
+- [void start(unsigned int repeatLimit)](#start)
+- [void stop()](#stop)
+- [void restart()](#restart)
+- [bool isExpired()](#isExpired)
+- [bool onExpired()](#onExpired)
+- [bool isActive()](#isActive)
+- [unsigned long getElapsedTime()](#getElapsedTime)
+- [unsigned long getRemainingTime()](#getRemainingTime)
+- [unsigned long getElapsedPercent()](#getElapsedPercent)
+- [unsigned long getRemainingPercent()](#getRemainingPercent)
+- [unsigned int getRepeats()](#getRepeats)
 
 ## cgrSoftTimer
 - Include library and create your timer objects with your preferred precision
@@ -39,7 +39,7 @@ void loop() {
 }
 ```
 <h2 id="setHertz">
-  setHertz(unsigned int hertz)
+  void setHertz(unsigned int hertz)
 </h2>
 
 - Sets the running count of the timer per one second.
@@ -61,7 +61,7 @@ void loop() {
 }
 ```
 <h2 id="setTimeout">
-  setTimeout(unsigned long timeout)
+  void setTimeout(unsigned long timeout)
 </h2>
 - Sets the running period of the timer
 
@@ -81,7 +81,7 @@ void loop() {
 ```
 
 <h2 id="start">
-  start(unsigned int repeatLimit)
+  void start(unsigned int repeatLimit)
 </h2>
 - Starts the timer with given repeat count. Give 0 (zero) to function to work infinite
 
@@ -104,7 +104,7 @@ void loop() {
 ```
 
 <h2 id="stop">
-  stop()
+  void stop()
 </h2>
 - Stops the timer working
 
@@ -126,7 +126,7 @@ void loop() {
 ```
 
 <h2 id="restart">
-  restart()
+  void restart()
 </h2>
 - Restarts the timer with the given values before
 - You can use this function in any phase of timer working. (eg. while working for refreshin the timer, or after stopped to re use)
