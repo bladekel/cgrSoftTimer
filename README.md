@@ -8,17 +8,17 @@
 - [cgrSoftTimer](#cgrSoftTimer)
 - [setHertz(unsigned int hertz)](#setHertz)
 - [setTimeout(unsigned int timeout)](#setTimeout)
-- [start](#start)
+- [start(unsigned int repeatLimit)](#start)
 - [stop](#stop)
 - [restart](#restart)
-- [isExpired](#isExpired)
-- [onExpired](#onExpired)
-- [isActive](#isActive)
-- [getElapsedTime](#getElapsedTime)
-- [getRemainingTime](#getRemainingTime)
-- [getElapsedPercent](#getElapsedPercent)
-- [getRemainingPercent](#getRemainingPercent)
-- [getRepeats](#getRepeats)
+- [bool isExpired](#isExpired)
+- [bool onExpired](#onExpired)
+- [bool isActive](#isActive)
+- [unsigned long getElapsedTime](#getElapsedTime)
+- [unsigned long getRemainingTime](#getRemainingTime)
+- [unsigned long getElapsedPercent](#getElapsedPercent)
+- [unsigned long getRemainingPercent](#getRemainingPercent)
+- [unsigned int getRepeats](#getRepeats)
 
 ## cgrSoftTimer
 - Include library and create your timer objects with your preferred precision
@@ -39,7 +39,7 @@ void loop() {
 }
 ```
 <h2 id="setHertz">
-  setHertz(unsigned int)
+  setHertz(unsigned int hertz)
 </h2>
 
 - Sets the running count of the timer per one second.
@@ -60,7 +60,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 ```
-<h2 id="setHertz">
+<h2 id="setTimeout">
   setTimeout(unsigned long timeout)
 </h2>
 - Sets the running period of the timer
@@ -80,7 +80,9 @@ void loop() {
 }
 ```
 
-## start
+<h2 id="start">
+  start(unsigned int repeatLimit)
+</h2>
 - Starts the timer with given repeat count. Give 0 (zero) to function to work infinite
 
 ```c++
@@ -101,7 +103,9 @@ void loop() {
 }
 ```
 
-## stop
+<h2 id="stop">
+  stop()
+</h2>
 - Stops the timer working
 
 ```c++
@@ -121,7 +125,9 @@ void loop() {
 }
 ```
 
-## restart
+<h2 id="restart">
+  restart()
+</h2>
 - Restarts the timer with the given values before
 - You can use this function in any phase of timer working. (eg. while working for refreshin the timer, or after stopped to re use)
 
@@ -143,7 +149,9 @@ void loop() {
 }
 ```
 
-## isExpired
+<h2 id="isExpired">
+  bool isExpired()
+</h2>
 - This will run continuously after timer's first fired up phase. It means that the timer is fired up.
 
 ```c++
@@ -167,7 +175,9 @@ void loop() {
 }
 ```
 
-## onExpired
+<h2 id="onExpired">
+  bool onExpired()
+</h2>
 - This will run only once on every timer fired up phase. It means the timer is on the fire up time.
 
 ```c++
@@ -191,7 +201,9 @@ void loop() {
 }
 ```
 
-## isActive
+<h2 id="isActive">
+  bool isActive()
+</h2>
 - Checks is the timer is on working phase
 
 ```c++
@@ -215,7 +227,9 @@ void loop() {
 }
 ```
 
-## getElapsedTime
+<h2 id="getElapsedTime">
+  unsigned long getElapsedTime()
+</h2>
 - Returns an **unsigned long** for how much time have passed
 
 ```c++
@@ -235,7 +249,9 @@ void loop() {
 }
 ```
 
-## getRemainingTime
+<h2 id="getRemainingTime">
+  unsigned long getRemainingTime()
+</h2>
 - Returns an **unsigned long** for how much time is remaining
 
 ```c++
@@ -255,8 +271,9 @@ void loop() {
 }
 ```
 
-
-## getElapsedPercent
+<h2 id="getElapsedPercent">
+  unsigned long getElapsedPercent()
+</h2>
 - Returns an **unsigned long** for how much time have passed as an percentage
 
 ```c++
@@ -276,8 +293,9 @@ void loop() {
 }
 ```
 
-
-## getRemainingPercent
+<h2 id="getRemainingPercent">
+  unsigned long getRemainingPercent()
+</h2>
 - Returns an **unsigned long** for how much time is remaining as an percentage
 
 ```c++
@@ -297,8 +315,9 @@ void loop() {
 }
 ```
 
-
-## getRepeats
+<h2 id="getRepeats">
+  unsigned int getRepeats()
+</h2>
 - Returns an **unsigned int** for how much pulse has been counted
 
 ```c++
