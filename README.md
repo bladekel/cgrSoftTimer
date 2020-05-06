@@ -6,7 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [setHertz](#setHertz)
+- [setHertz(unsigned int)](#setHertz)
 - [setTimeout](#setTimeout)
 - [start](#start)
 - [stop](#stop)
@@ -16,9 +16,9 @@
 - [isActive](#isActive)
 - [getElapsedTime](#getElapsedTime)
 - [getRemainingTime](#getRemainingTime)
-- [getRepeats](#getRepeats)
 - [getElapsedPercent](#getElapsedPercent)
 - [getRemainingPercent](#getRemainingPercent)
+- [getRepeats](#getRepeats)
 
 ## cgrSoftTimer
 - Include library and create your timer objects with your preferred precision
