@@ -6,7 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [Go to Real Cool Heading section](#real-cool-heading)
+- [Go to Heading section] (#-this-is-a-heading)
 - [setTimeout](#setTimeout)
 - [start](#start)
 - [stop](#stop)
@@ -38,7 +38,7 @@ void loop() {
 
 }
 ```
-#Real Cool Heading
+# This is a heading
 - Sets the running count of the timer per one second.
 - Range of milliseconds precision timer : 1-1000 Hz 
 - Range of microseconds precision timer : 1-250000 Hz 
