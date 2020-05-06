@@ -9,8 +9,8 @@
 - [setHertz](#setHertz)
 - [setTimeout](#setTimeout)
 - [start](#start)
-- [restart](#restart)
 - [stop](#stop)
+- [restart](#restart)
 - [isExpired](#isExpired)
 - [onExpired](#onExpired)
 - [isActive](#isActive)
@@ -70,6 +70,27 @@ void setup() {
   // put your setup code here, to run once:
   tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
   tmr2.setTimeout(1000000);  // tmr2 will pulse every 1 seconds ( 1 seconds = 1000000 microseconds )
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+}
+```
+
+## start
+- Starts the timer with given repeat count. Give 0 (zero) to function to work infinite
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+cgrSoftTimer tmr2(&micros); // tmr2 object with microseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  tmr2.setTimeout(1000000);  // tmr2 will pulse every 1 seconds ( 1 seconds = 1000000 microseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+  tmr2.start(0); // tmr1 is going to work unlimited times
 }
 
 void loop() {
