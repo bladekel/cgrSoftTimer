@@ -1,9 +1,3 @@
-<h2 id="markdown-header-changing-plsql-parameters-and-shared-developers-lifecycle">
-  Changing() PL/SQL parameters and shared developer's lifecycle
-</h2>
-
-[See instructions() below](#markdown-header-changing-plsql-parameters-and-shared-developers-lifecycle)
-
 # cgrSoftTimer
 
 - For using milliseconds and microseconds timekeeping on arduino without blocking the code
@@ -12,8 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [List CheckBox (selam)](#list-checkbox-[selam])
-- [deneme(unsigned long)](#markdown)
+- [setHertz(unsigned int)](#setHertz)
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
@@ -44,8 +37,8 @@ void loop() {
 
 }
 ```
-<h2 id="markdown">
-  deneme(unsigned long)
+<h2 id="setHertz">
+  setHertz(unsigned long)
 </h2>
 
 - Sets the running count of the timer per one second.
