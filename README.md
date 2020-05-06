@@ -6,7 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [setHertz(unsigned int)](#setHertz)
+- [setHertz(unsigned int)](#setHertz(unsigned int))
 - [setTimeout](#setTimeout)
 - [start](#start)
 - [stop](#stop)
@@ -39,7 +39,7 @@ void loop() {
 }
 ```
 
-## setHertz (unsigned int)
+## setHertz(unsigned int)
 - Sets the running count of the timer per one second.
 - Range of milliseconds precision timer : 1-1000 Hz 
 - Range of microseconds precision timer : 1-250000 Hz 
