@@ -6,7 +6,8 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [setHertz(unsigned int)](#setHertz)
+- [setHertz(unsigned int hertz)](#setHertz)
+- [setTimeout(unsigned int timeout)](#setTimeout)
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
@@ -38,7 +39,7 @@ void loop() {
 }
 ```
 <h2 id="setHertz">
-  setHertz(unsigned long)
+  setHertz(unsigned int)
 </h2>
 
 - Sets the running count of the timer per one second.
@@ -59,7 +60,9 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 ```
-## setTimeout(unsigned long timeout)
+<h2 id="setHertz">
+  setTimeout(unsigned long timeout)
+</h2>
 - Sets the running period of the timer
 
 ```c++
