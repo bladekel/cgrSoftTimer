@@ -213,7 +213,7 @@ void loop() {
 ```
 
 ## getElapsedTime
-- Checks the elapsed time to the end of the fire up phase
+- Returns an **unsigned long** for how much time have passed
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -232,9 +232,85 @@ void loop() {
 }
 ```
 
+## getRemainingTime
+- Returns an **unsigned long** for how much time is remaining
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned long remainingTime = tmr1.getRemainingTime(); // Gets the value of remaining time of tmr1
+}
+```
 
 
-- [getRemainingTime](#getRemainingTime)
-- [getRepeats](#getRepeats)
-- [getElapsedPercent](#getElapsedPercent)
-- [getRemainingPercent](#getRemainingPercent)
+## getElapsedPercent
+- Returns an **unsigned long** for how much time have passed as an percentage
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned long elapsedPercent = tmr1.getElapsedPercent(); // Gets the percentage of elapsed time of tmr1
+}
+```
+
+
+## getRemainingPercent
+- Returns an **unsigned long** for how much time is remaining as an percentage
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned long remainingPercent = tmr1.getRemainingPercent(); // Gets the percentage of remaining time of tmr1
+}
+```
+
+
+## getRepeats
+- Returns an **unsigned int** for how much pulse has been counted
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned int totalPulse = tmr1.getRepeats(); // Gets the counted pulses of tmr1
+}
+```
