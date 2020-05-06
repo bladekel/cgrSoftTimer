@@ -128,6 +128,7 @@ void loop() {
 <h2 id="restart">
   void restart()
 </h2>
+
 - Restarts the timer with the given values before
 - You can use this function in any phase of timer working. (eg. while working for refreshin the timer, or after stopped to re use)
 
