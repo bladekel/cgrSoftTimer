@@ -7,7 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [List CheckBox (selam)](#list-checkbox-[selam])
-- [deneme](#deneme)
+- [deneme](#deneme1)
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
