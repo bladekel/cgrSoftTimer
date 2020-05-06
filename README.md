@@ -6,7 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
-- [Go to Heading section] (#-this-is-a-heading)
+- [List CheckBox](#list-checkbox)
 - [setTimeout](#setTimeout)
 - [start](#start)
 - [stop](#stop)
@@ -38,7 +38,7 @@ void loop() {
 
 }
 ```
-# This is a heading
+## List CheckBox
 - Sets the running count of the timer per one second.
 - Range of milliseconds precision timer : 1-1000 Hz 
 - Range of microseconds precision timer : 1-250000 Hz 
