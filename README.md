@@ -7,7 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [List CheckBox](#list-checkbox)
-- [setTimeout](#setTimeout)
+- [setTimeout(unsigned long timeout)](#setTimeout(unsigned-long-timeout))
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
@@ -57,8 +57,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 ```
-
-## setTimeout
+## setTimeout(unsigned long timeout)
 - Sets the running period of the timer
 
 ```c++
