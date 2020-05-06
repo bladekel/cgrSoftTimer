@@ -1,5 +1,5 @@
-#ifndef __CGRSOFTTİMER_H__
-#define __CGRSOFTTİMER_H__
+#ifndef __CGRSOFTTIMER_H__
+#define __CGRSOFTTIMER_H__
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -46,4 +46,4 @@ class cgrSoftTimer
 		unsigned long getRemainingPercent(); // Returns the percentage of the remaining time
 }; //cgrSoftTimer
 
-#endif //__CGRSOFTTİMER_H__
+#endif //__CGRSOFTTIMER_H__
