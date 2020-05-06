@@ -7,7 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [List CheckBox (selam)](#list-checkbox-[selam])
-- [deneme1](#deneme)
+- [deneme(1)](#deneme-1-)
 - [start](#start)
 - [stop](#stop)
 - [restart](#restart)
@@ -38,7 +38,7 @@ void loop() {
 
 }
 ```
-## [deneme1](#deneme)
+## deneme(1)
 - Sets the running count of the timer per one second.
 - Range of milliseconds precision timer : 1-1000 Hz 
 - Range of microseconds precision timer : 1-250000 Hz 
