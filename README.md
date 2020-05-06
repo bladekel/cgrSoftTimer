@@ -230,7 +230,7 @@ void loop() {
 <h2 id="getElapsedTime">
   unsigned long getElapsedTime()
 </h2>
-- Returns an **unsigned long** for how much time have passed
+- Returns an unsigned long for how much time have passed
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -252,7 +252,7 @@ void loop() {
 <h2 id="getRemainingTime">
   unsigned long getRemainingTime()
 </h2>
-- Returns an **unsigned long** for how much time is remaining
+- Returns an unsigned long for how much time is remaining
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -274,7 +274,7 @@ void loop() {
 <h2 id="getElapsedPercent">
   unsigned long getElapsedPercent()
 </h2>
-- Returns an **unsigned long** for how much time have passed as an percentage
+- Returns an unsigned long for how much time have passed as an percentage
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -296,7 +296,7 @@ void loop() {
 <h2 id="getRemainingPercent">
   unsigned long getRemainingPercent()
 </h2>
-- Returns an **unsigned long** for how much time is remaining as an percentage
+- Returns an unsigned long for how much time is remaining as an percentage
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -318,7 +318,7 @@ void loop() {
 <h2 id="getRepeats">
   unsigned int getRepeats()
 </h2>
-- Returns an **unsigned int** for how much pulse has been counted
+- Returns an unsigned int for how much pulse has been counted
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
