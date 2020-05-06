@@ -63,6 +63,7 @@ void loop() {
 <h2 id="setTimeout">
   void setTimeout(unsigned long timeout)
 </h2>
+
 - Sets the running period of the timer
 
 ```c++
@@ -83,7 +84,8 @@ void loop() {
 <h2 id="start">
   void start(unsigned int repeatLimit)
 </h2>
-- Starts the timer with given repeat count. Give 0 (zero) to function to work infinite
+
+- Starts the timer with given repeat count. Give **0 (zero)** to function to work infinite
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -106,6 +108,7 @@ void loop() {
 <h2 id="stop">
   void stop()
 </h2>
+
 - Stops the timer working
 
 ```c++
@@ -153,6 +156,7 @@ void loop() {
 <h2 id="isExpired">
   bool isExpired()
 </h2>
+
 - This will run continuously after timer's first fired up phase. It means that the timer is fired up.
 
 ```c++
@@ -179,6 +183,7 @@ void loop() {
 <h2 id="onExpired">
   bool onExpired()
 </h2>
+
 - This will run only once on every timer fired up phase. It means the timer is on the fire up time.
 
 ```c++
@@ -205,6 +210,7 @@ void loop() {
 <h2 id="isActive">
   bool isActive()
 </h2>
+
 - Checks is the timer is on working phase
 
 ```c++
@@ -231,7 +237,8 @@ void loop() {
 <h2 id="getElapsedTime">
   unsigned long getElapsedTime()
 </h2>
-- Returns an unsigned long for how much time have passed
+
+- Returns an **unsigned long** for how much time have passed
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -253,7 +260,8 @@ void loop() {
 <h2 id="getRemainingTime">
   unsigned long getRemainingTime()
 </h2>
-- Returns an unsigned long for how much time is remaining
+
+- Returns an **unsigned long** for how much time is remaining
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -275,7 +283,8 @@ void loop() {
 <h2 id="getElapsedPercent">
   unsigned long getElapsedPercent()
 </h2>
-- Returns an unsigned long for how much time have passed as an percentage
+
+- Returns an **unsigned long** for how much time have passed as an percentage
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -297,7 +306,8 @@ void loop() {
 <h2 id="getRemainingPercent">
   unsigned long getRemainingPercent()
 </h2>
-- Returns an unsigned long for how much time is remaining as an percentage
+
+- Returns an **unsigned long** for how much time is remaining as an percentage
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
@@ -319,7 +329,8 @@ void loop() {
 <h2 id="getRepeats">
   unsigned int getRepeats()
 </h2>
-- Returns an unsigned int for how much pulse has been counted
+
+- Returns an **unsigned int** for how much pulse has been counted
 
 ```c++
 cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
