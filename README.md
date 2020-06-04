@@ -6,6 +6,7 @@
 
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
+- [cgrSoftTimer(usedTimer usedTimerPtr)](#cgrSoftTimer1)
 - [void setHertz(unsigned int hertz)](#setHertz)
 - [void setTimeout(unsigned int timeout)](#setTimeout)
 - [void start(unsigned int repeatLimit)](#start)
@@ -38,6 +39,12 @@ void loop() {
 
 }
 ```
+
+<h2 id="cgrSoftTimer1">
+  cgrSoftTimer(usedTimer usedTimerPtr)
+</h2>
+
+
 <h2 id="setHertz">
   void setHertz(unsigned int hertz)
 </h2>
