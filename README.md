@@ -38,8 +38,7 @@ cgrSoftTimer tmr1; // tmr1 object
 ```
 [UP ^^](#publicMethods)
 
-
-{### Center-aligned: .text-center}
+<div style="text-align: right"> your-text-here </div>
 
 <h2 id="cgrSoftTimer1">
   cgrSoftTimer(usedTimer usedTimerPtr)
