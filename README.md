@@ -1,9 +1,3 @@
-
-   <body>
-      <h1>Tutorial</h1>
-      <p style="text-align:right;">Learn for free</p>
-   </body>
-
 # cgrSoftTimer
 
 - For using milliseconds and microseconds timekeeping on arduino without blocking the code
@@ -43,8 +37,6 @@
 cgrSoftTimer tmr1; // tmr1 object
 ```
 [UP ^^](#publicMethods)
-
-<p style='text-align: right;'> Your Text </p>
 
 <h2 id="cgrSoftTimer1">
   cgrSoftTimer(usedTimer usedTimerPtr)
