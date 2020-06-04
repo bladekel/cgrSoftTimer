@@ -22,6 +22,16 @@
 - [unsigned int getRepeats()](#getRepeats)
 
 ## cgrSoftTimer
+- Include library with any defines
+```c++
+#include <cgrSoftTimer.h>
+
+cgrSoftTimer tmr1; // tmr1 object
+```
+
+<h2 id="cgrSoftTimer1">
+  cgrSoftTimer(usedTimer usedTimerPtr)
+</h2>
 - Include library and create your timer objects with your preferred precision
 ```c++
 #include <cgrSoftTimer.h>
@@ -39,10 +49,6 @@ void loop() {
 
 }
 ```
-
-<h2 id="cgrSoftTimer1">
-  cgrSoftTimer(usedTimer usedTimerPtr)
-</h2>
 
 
 <h2 id="setHertz">
