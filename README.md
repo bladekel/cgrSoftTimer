@@ -4,11 +4,10 @@
 - Suitable for multitasking and OOP
 - Create your timer object and do your staff 
 
-## Public methods
-
 <h2 id="publicMethods">
   Public methods
 </h2>
+
 - [cgrSoftTimer](#cgrSoftTimer)
 - [cgrSoftTimer(usedTimer usedTimerPtr)](#cgrSoftTimer1)
 - [void setPrecision(usedTimer usedTimerPtr)](#setPrecision)
