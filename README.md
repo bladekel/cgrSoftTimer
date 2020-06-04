@@ -60,6 +60,7 @@ void loop() {
 }
 ```
 
+- [UP ^^](#publicMethods)
 <h2 id="setPrecision">
   void setPrecision(usedTimer usedTimerPtr)
 </h2>
