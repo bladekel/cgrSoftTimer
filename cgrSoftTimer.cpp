@@ -1,24 +1,35 @@
 #include "cgrSoftTimer.h"
 
+cgrSoftTimer::cgrSoftTimer()
+{
+
+}
+
 cgrSoftTimer::cgrSoftTimer(usedTimer usedTimerPtr)
+{
+	this->usedTimerPtr = usedTimerPtr;
+}
+
+void cgrSoftTimer::setPrecision(usedTimer usedTimerPtr)
 {
 	this->usedTimerPtr = usedTimerPtr;
 }
 
 void cgrSoftTimer::setHertz(unsigned int hertz)
 {
+	__hertz = hertz;	
+	__hertz = (__hertz > 0) ? __hertz : 1;
+	
 	if(this->usedTimerPtr == millis)
 	{
-		hertz = (hertz <= 1000) ? hertz : 1000;
-		__timeout = (unsigned long)(1000 / hertz);
+		__hertz = (__hertz < 1000) ? __hertz : 1000;
+		__timeout = (unsigned long)(1000 / __hertz);
 	}
 	
 	else if(this->usedTimerPtr == micros)
 	{
-		__timeout = (unsigned long)(1000000 / hertz);
-	}
-	
-	hertz = (hertz > 0) ? hertz : 1;	
+		__timeout = (unsigned long)(1000000 / __hertz);
+	}		
 }
 
 void cgrSoftTimer::setTimeout(unsigned long timeout)
@@ -141,4 +152,14 @@ unsigned long cgrSoftTimer::getElapsedPercent()
 unsigned long cgrSoftTimer::getRemainingPercent()
 {
 	return 100 - getElapsedPercent();
+}
+
+unsigned int cgrSoftTimer::getHertz()
+{
+	return __hertz;
+}
+
+unsigned long cgrSoftTimer::getTimeout()
+{
+	return __timeout;
 }
