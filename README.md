@@ -7,7 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [cgrSoftTimer(usedTimer usedTimerPtr)](#cgrSoftTimer1)
-- [setPrecision(usedTimer usedTimerPtr)](#setPrecision)
+- [void setPrecision(usedTimer usedTimerPtr)](#setPrecision)
 - [void setHertz(unsigned int hertz)](#setHertz)
 - [void setTimeout(unsigned int timeout)](#setTimeout)
 - [void start(unsigned int repeatLimit)](#start)
@@ -15,6 +15,7 @@
 - [void restart()](#restart)
 - [bool isExpired()](#isExpired)
 - [bool onExpired()](#onExpired)
+- [bool isCompleted()](#isCompleted)
 - [bool isActive()](#isActive)
 - [unsigned long getElapsedTime()](#getElapsedTime)
 - [unsigned long getRemainingTime()](#getRemainingTime)
@@ -54,9 +55,9 @@ void loop() {
 ```
 
 <h2 id="setPrecision">
-  setPrecision(usedTimer usedTimerPtr)
+  void setPrecision(usedTimer usedTimerPtr)
 </h2>
-- Define the created timer with your preferred timer precision
+- Sets the created timer with preferred timer precision
 
 ```c++
 #include <cgrSoftTimer.h>
@@ -241,6 +242,34 @@ void loop() {
   if(tmr1.onExpired())
   {
     // At every 1000 milliseconds, codes in here will run once..
+    // do your staff here
+  }
+}
+```
+
+
+<h2 id="isCompleted">
+  bool isCompleted()
+</h2>
+
+- This will run continuously on every timer finished its work and not started to a new job yet.
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  if(tmr1.isCompleted())
+  {
+    // At every 1000 milliseconds, codes in here will run once and after the repeat count of timer finished will run continuosly
     // do your staff here
   }
 }
