@@ -1,4 +1,5 @@
 cgrSoftTimer		KEYWORD1
+setPrecision		LITERAL1
 setHertz		LITERAL1
 setTimeout		LITERAL1
 start			LITERAL1
@@ -7,8 +8,11 @@ stop			LITERAL1
 isExpired		KEYWORD1
 onExpired		KEYWORD1
 isActive		KEYWORD1
+isCompleted		KEYWORD1
 getElapsedTime		KEYWORD1
 getRemainingTime	KEYWORD1
 getRepeats		KEYWORD1
 getElapsedPercent	KEYWORD1
 getRemainingPercent	KEYWORD1
+getHertz	KEYWORD1
+getTimeout	KEYWORD1
