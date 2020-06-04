@@ -22,6 +22,8 @@
 - [unsigned long getElapsedPercent()](#getElapsedPercent)
 - [unsigned long getRemainingPercent()](#getRemainingPercent)
 - [unsigned int getRepeats()](#getRepeats)
+- [unsigned int getHertz()](#getHertz)
+- [unsigned long getTimeout()](#getTimeout)
 
 ## cgrSoftTimer
 - Include library with any defines
@@ -414,5 +416,51 @@ void loop() {
   // put your main code here, to run repeatedly:
   
    unsigned int totalPulse = tmr1.getRepeats(); // Gets the counted pulses of tmr1
+}
+```
+
+<h2 id="getHertz">
+  unsigned int getHertz()
+</h2>
+
+- Returns an **unsigned int** for the current working Hertz
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setHertz(5);     // tmr1 will pulse 5 times per second
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned int workingHertz = tmr1.getHertz(); // Gets the current working Hertz of tmr1
+}
+```
+
+<h2 id="getTimeout">
+  unsigned long getTimeout()
+</h2>
+
+- Returns an **unsigned long** for the current working Timeout
+
+```c++
+cgrSoftTimer tmr1(&millis); // tmr1 object with milliseconds precision
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setTimeout(1000);     // tmr1 will pulse every 1 seconds ( 1 seconds = 1000 milliseconds )
+  
+  tmr1.start(5); // tmr1 is going to work 5 times
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+   unsigned int workingTimeout = tmr1.getTimeout(); // Gets the current working Timeout of tmr1
 }
 ```
