@@ -5,6 +5,10 @@
 - Create your timer object and do your staff 
 
 ## Public methods
+
+<h2 id="publicMethods">
+  Public methods
+</h2>
 - [cgrSoftTimer](#cgrSoftTimer)
 - [cgrSoftTimer(usedTimer usedTimerPtr)](#cgrSoftTimer1)
 - [void setPrecision(usedTimer usedTimerPtr)](#setPrecision)
@@ -33,6 +37,7 @@
 
 cgrSoftTimer tmr1; // tmr1 object
 ```
+- [UP ^^](#publicMethods)
 
 <h2 id="cgrSoftTimer1">
   cgrSoftTimer(usedTimer usedTimerPtr)
