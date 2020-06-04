@@ -37,6 +37,7 @@
 cgrSoftTimer tmr1; // tmr1 object
 ```
 [UP ^^](#publicMethods)
+{: .text-center}
 
 <h2 id="cgrSoftTimer1">
   cgrSoftTimer(usedTimer usedTimerPtr)
