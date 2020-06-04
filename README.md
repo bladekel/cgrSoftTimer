@@ -132,6 +132,7 @@ void loop() {
 ```
 
 [UP ^^](#publicMethods)
+<h2 id="start">
   void start(unsigned int repeatLimit)
 </h2>
 
