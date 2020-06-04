@@ -7,6 +7,7 @@
 ## Public methods
 - [cgrSoftTimer](#cgrSoftTimer)
 - [cgrSoftTimer(usedTimer usedTimerPtr)](#cgrSoftTimer1)
+- [setPrecision(usedTimer usedTimerPtr)](#setPrecision)
 - [void setHertz(unsigned int hertz)](#setHertz)
 - [void setTimeout(unsigned int timeout)](#setTimeout)
 - [void start(unsigned int repeatLimit)](#start)
@@ -51,6 +52,31 @@ void loop() {
 
 }
 ```
+
+<h2 id="setPrecision">
+  setPrecision(usedTimer usedTimerPtr)
+</h2>
+- Define the created timer with your preferred timer precision
+
+```c++
+#include <cgrSoftTimer.h>
+
+cgrSoftTimer tmr1; // tmr1 object
+cgrSoftTimer tmr2; // tmr2 object
+
+void setup() {
+  // put your setup code here, to run once:
+  tmr1.setPrecision(&millis); // tmr1 object with milliseconds precision
+  tmr2.setPrecision(&micros); // tmr2 object with microseconds precision
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+```
+
 <h2 id="setHertz">
   void setHertz(unsigned int hertz)
 </h2>
