@@ -28,7 +28,9 @@ class cgrSoftTimer
 		
 	public:
 		cgrSoftTimer(usedTimer usedTimerPtr); // Class constructor
+		cgrSoftTimer();
 	
+		void setPrecision(usedTimer usedTimerPtr);
 		void setHertz(unsigned int hertz); // Set the timer hertz
 		void setTimeout(unsigned long timeout); // Sets the timer timeout
 		void start(unsigned int repeatLimit); // Starts the timer with given count limit (0 is unlimited)
@@ -44,6 +46,8 @@ class cgrSoftTimer
 		unsigned int  getRepeats(); // Returns the repeat count
 		unsigned long getElapsedPercent(); // Returns the percentage of the elapsed time
 		unsigned long getRemainingPercent(); // Returns the percentage of the remaining time
+		unsigned int  getHertz(); // Return the working frequency
+		unsigned long getTimeout(); // Return the working timeout
 }; //cgrSoftTimer
 
 #endif //__CGRSOFTTIMER_H__
