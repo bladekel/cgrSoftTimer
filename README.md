@@ -23,6 +23,7 @@
 
 ## cgrSoftTimer
 - Include library with any defines
+
 ```c++
 #include <cgrSoftTimer.h>
 
@@ -33,6 +34,7 @@ cgrSoftTimer tmr1; // tmr1 object
   cgrSoftTimer(usedTimer usedTimerPtr)
 </h2>
 - Include library and create your timer objects with your preferred precision
+
 ```c++
 #include <cgrSoftTimer.h>
 
@@ -49,8 +51,6 @@ void loop() {
 
 }
 ```
-
-
 <h2 id="setHertz">
   void setHertz(unsigned int hertz)
 </h2>
