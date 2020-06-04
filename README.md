@@ -36,7 +36,7 @@
 
 cgrSoftTimer tmr1; // tmr1 object
 ```
-- [UP ^^](#publicMethods)
+[UP ^^](#publicMethods)
 
 <h2 id="cgrSoftTimer1">
   cgrSoftTimer(usedTimer usedTimerPtr)
@@ -60,7 +60,7 @@ void loop() {
 }
 ```
 
-- [UP ^^](#publicMethods)
+[UP ^^](#publicMethods)
 <h2 id="setPrecision">
   void setPrecision(usedTimer usedTimerPtr)
 </h2>
@@ -85,6 +85,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="setHertz">
   void setHertz(unsigned int hertz)
 </h2>
@@ -107,6 +108,8 @@ void loop() {
   // put your main code here, to run repeatedly:
 }
 ```
+
+[UP ^^](#publicMethods)
 <h2 id="setTimeout">
   void setTimeout(unsigned long timeout)
 </h2>
@@ -128,7 +131,7 @@ void loop() {
 }
 ```
 
-<h2 id="start">
+[UP ^^](#publicMethods)
   void start(unsigned int repeatLimit)
 </h2>
 
@@ -152,6 +155,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="stop">
   void stop()
 </h2>
@@ -175,6 +179,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="restart">
   void restart()
 </h2>
@@ -200,6 +205,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="isExpired">
   bool isExpired()
 </h2>
@@ -227,6 +233,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="onExpired">
   bool onExpired()
 </h2>
@@ -254,7 +261,7 @@ void loop() {
 }
 ```
 
-
+[UP ^^](#publicMethods)
 <h2 id="isCompleted">
   bool isCompleted()
 </h2>
@@ -282,6 +289,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="isActive">
   bool isActive()
 </h2>
@@ -309,6 +317,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getElapsedTime">
   unsigned long getElapsedTime()
 </h2>
@@ -332,6 +341,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getRemainingTime">
   unsigned long getRemainingTime()
 </h2>
@@ -355,6 +365,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getElapsedPercent">
   unsigned long getElapsedPercent()
 </h2>
@@ -378,6 +389,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getRemainingPercent">
   unsigned long getRemainingPercent()
 </h2>
@@ -401,6 +413,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getRepeats">
   unsigned int getRepeats()
 </h2>
@@ -424,6 +437,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getHertz">
   unsigned int getHertz()
 </h2>
@@ -447,6 +461,7 @@ void loop() {
 }
 ```
 
+[UP ^^](#publicMethods)
 <h2 id="getTimeout">
   unsigned long getTimeout()
 </h2>
